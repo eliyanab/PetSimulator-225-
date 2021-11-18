@@ -1,32 +1,81 @@
-<html>
-<title>Pet Simulator</title>
-
+<!DOCTYPE html>
 <head>
-    <!-- Bootstrap Library -->
+    <title>Pet Simulator</title>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- Bootstrap Css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Bootstrap image checkbox css-->
+    <link rel="stylesheet" href="/path/to/bootstrap.min.css">
+    <link href="/path/to/dist/bootstrap-image-checkbox.css" rel="stylesheet">
 
     <!-- Jquery library   ---->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="d-flex justify-content-center align-items-center container ">
-            <form >
-                <h1 class="display-5">Welcome!</h1>                
-                <div class="form-group">
-                    <label for="Name">Your name: </label>
-                    <input type="text" class="form-control" id="Name" placeholder="Name" name="Name">
-                </div>
-                <div class="form-group">
-                    <label for="Pname">Your pets name: </label>
-                    <input type="text" class="form-control" id="Pname" placeholder="Pname" name="Pname">
-                </div>
-            </form>
-        
+    <div class="container" id="form" style="border:rgba(255, 166, 0, 0.63); border-width:5px; border-style:solid;">
+        <form>
+            <h3>Pet Simulator</h3>
+
+            <p>
+                Your name:
+                <input type="text" id="Name">
+            </p>
+
+            <p>
+                Your pets name:
+                <input type="text" id="Pname">
+            </p>
+
+            <p>Choose your pet to get started: </p>
+
+            <div class="form-check">
+                <label>
+                    <a href="Cat.html" class="btn btn-info" role="button">
+                        <img src="img/cat (1).png" width="60" height="60"> Cat
+                    </a>
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label>
+                    <a href="Dog.html" class="btn btn-info" role="button">
+                        <img src="img/dog.png" width="60" height="60"> Dog
+                    </a>
+                </label>
+            </div>
+
+            <div class="form-check">
+                <label>
+                    <a href="Fish.html" class="btn btn-info" role="button">
+                        <img src="img/fish.png" width="60" height="60"> Fish
+                    </a>
+                </label>
+            </div>
+
+            <input type="image" id="help_btn" src="./img/help_btn.png" width="15px" height="30px">
+        </form>
+
+        <div class="container">
+            <p id="help_info"> 
+                Help info goes here!
+            </p>
+        </div>
     </div>
-    
+
+    <script>
+        $("#help_btn").click(function () {
+            document.getElementById("form").style.display = "none";
+            console.log("somethign is happening")
+            document.getElementById("#help_info").style.display = "block";
+        });
+    </script>
 </body>
 
 </html>

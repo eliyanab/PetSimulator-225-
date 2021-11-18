@@ -1,0 +1,35 @@
+body{
+    background-image: url("../img/home.png");
+    font-family: 'Brush Script MT', cursive;
+}
+
+p, h3{
+    color: #2f2457cb;
+    font-weight: bold;
+}
+
+input{
+    width: 75px;
+    border-radius: 5px;
+    border: #ded9e0;
+}
+
+#form{
+    width: 400px;
+    align-content: center;
+    top: 5%;
+    border-radius: 25px;
+    background-color: #e7b08270;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding: 5px;
+}
+
+#help_btn{
+    margin-left: 70%;
+}
+
+#help_info{
+    display: none;
+}

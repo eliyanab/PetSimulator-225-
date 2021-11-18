@@ -1,0 +1,66 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+background-image: url('../img/new_dog_bkgd.png');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-position-x: center;
+background-position-y: center;
+}
+
+.btn-group-vertical {
+padding: 5px;
+width: 100px;
+align-items: center;
+top: 5%;
+left: 15%;
+}
+
+#dog {
+position: fixed;
+bottom: 10%;
+left: 28%;
+width: 125px;
+}
+
+#dog_speak{
+display: none;
+position: fixed;
+top: 37%;
+bottom: 30%;
+left: 40%;
+}
+
+#petHand, #ball, #zzz{
+display: none;
+position: fixed;
+top: 60%;
+left: 32%;
+width: 65px;
+height: 65px;
+}
+
+#zzz {
+left: 45%
+}
+
+#ball{
+top: 90%;
+left: 45%
+}
+
+#shower{
+display: none;
+position: fixed;
+width: 125px;
+top: 47%;
+left: 33%;
+}
+
+button {
+height: 50px;
+}
